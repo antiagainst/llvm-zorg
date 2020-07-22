@@ -1104,6 +1104,7 @@ def _get_mlir_builders():
                             '-DLLVM_ENABLE_PROJECTS=mlir',
                             '-DMLIR_CUDA_RUNNER_ENABLED=1',
                             '-DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc',
+                            '-DMLIR_VULKAN_RUNNER_ENABLED=1',
                         ],
                         env={
                             'CC':'clang',
